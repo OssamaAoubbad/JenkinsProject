@@ -34,10 +34,16 @@ public class BMICalculator {
 	private static double calculateBMI(Coder coder) {
 		double height = coder.getHeight();
 		double weight = coder.getWeight();
+
+		//afficher un message
+		System.out.println("the height is "+heighr);
 		if (height == 0.0)
 			throw new ArithmeticException();
 		double bmi = weight / (height * height);
 		return Math.round(bmi * 100) / 100.0;
+
+
+		
 	}
 
 }
