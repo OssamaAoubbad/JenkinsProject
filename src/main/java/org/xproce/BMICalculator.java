@@ -35,8 +35,6 @@ public class BMICalculator {
 		double height = coder.getHeight();
 		double weight = coder.getWeight();
 
-		//afficher un message
-		System.out.println("the height is "+heighr);
 		if (height == 0.0)
 			throw new ArithmeticException();
 		double bmi = weight / (height * height);
